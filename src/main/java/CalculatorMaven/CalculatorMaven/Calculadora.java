@@ -14,7 +14,7 @@ public class Calculadora {
 		estadoFuncionalidad[6] = false;
 		estadoFuncionalidad[7] = false;
 		estadoFuncionalidad[8] = false;
-		estadoFuncionalidad[9] = false;		
+		estadoFuncionalidad[9] = true;		
 	}
 	
 	public long suma(int a, int b) {
@@ -64,7 +64,11 @@ public class Calculadora {
 	
 	public boolean esImpar(int a) {
 		//TODO desarrollar funcionalidad
-		return false;
+		boolean salida = false;
+		if(a%2!=0){
+            salida=true;
+       }
+		return salida;
 	}
 
 	public boolean[] getEstadoFuncionalidad() {
