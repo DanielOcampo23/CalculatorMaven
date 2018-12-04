@@ -58,9 +58,24 @@ public class Calculadora {
 	}
 	
 	public boolean esPar(int a) {
+		boolena retorno=false;
+		String first=a;
+		first=first.trim();
+		char[] arreglo=first.toCharArray();
+		char last=arreglo[arreglo.length-1];
+		if(last=='0') {
+			retorno=true;
+		}else if(last=='2') {
+			retorno=true;
+		}else if(last=='4') {
+			retorno=true;
+		}else if(last=='6') {
+			retorno=true;
+		}else if(last=='8') {
+			retorno=true;
+		}
 		
-		
-		return a%2==0;
+		return retorno;
 	}
 	
 	public boolean esImpar(int a) {
