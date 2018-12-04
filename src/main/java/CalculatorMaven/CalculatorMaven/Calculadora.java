@@ -5,7 +5,7 @@ public class Calculadora {
 	
 	public Calculadora() {
 		estadoFuncionalidad = new boolean[10];
-		estadoFuncionalidad[0] = false;
+    estadoFuncionalidad[0] = false;
 		estadoFuncionalidad[1] = true;
 		estadoFuncionalidad[2] = false;
 		estadoFuncionalidad[3] = true;
@@ -13,8 +13,8 @@ public class Calculadora {
 		estadoFuncionalidad[5] = false;
 		estadoFuncionalidad[6] = true;
 		estadoFuncionalidad[7] = false;
-		estadoFuncionalidad[8] = false;
-		estadoFuncionalidad[9] = false;		
+		estadoFuncionalidad[8] = true;
+		estadoFuncionalidad[9] = false;
 	}
 	
 	public long suma(int a, int b) {
@@ -38,7 +38,8 @@ public class Calculadora {
 	}
 	
 	public int modulo(int a, int b) {
-		return a%b;
+		//TODO desarrollar funcionalidad
+		return 0;
 	}
 	
 	public long exponente(int a, int b) {
@@ -60,8 +61,24 @@ public class Calculadora {
 	}
 	
 	public boolean esPar(int a) {
-		//TODO desarrollar funcionalidad
-		return false;
+		boolena retorno=false;
+		String first=a;
+		first=first.trim();
+		char[] arreglo=first.toCharArray();
+		char last=arreglo[arreglo.length-1];
+		if(last=='0') {
+			retorno=true;
+		}else if(last=='2') {
+			retorno=true;
+		}else if(last=='4') {
+			retorno=true;
+		}else if(last=='6') {
+			retorno=true;
+		}else if(last=='8') {
+			retorno=true;
+		}
+		
+		return retorno;
 	}
 	
 	public boolean esImpar(int a) {
@@ -79,3 +96,4 @@ public class Calculadora {
 	
 	
 }
+
