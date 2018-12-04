@@ -61,7 +61,7 @@ public class Calculadora {
 		boolena retorno=false;
 		String first=a+"";
 		char[] arreglo=first.toCharArray();
-		String last=arreglo[arreglo.length-1];
+		char last=arreglo[arreglo.length-1];
 		if(last=='0') {
 			retorno=true;
 		}else if(last=='2') {
