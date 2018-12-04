@@ -13,7 +13,7 @@ public class Calculadora {
 		estadoFuncionalidad[5] = false;
 		estadoFuncionalidad[6] = false;
 		estadoFuncionalidad[7] = false;
-		estadoFuncionalidad[8] = false;
+		estadoFuncionalidad[8] = true;
 		estadoFuncionalidad[9] = false;		
 	}
 	
@@ -58,8 +58,7 @@ public class Calculadora {
 	}
 	
 	public boolean esPar(int a) {
-		//TODO desarrollar funcionalidad
-		return false;
+		return a%2==0;
 	}
 	
 	public boolean esImpar(int a) {
