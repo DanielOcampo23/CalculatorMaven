@@ -64,11 +64,12 @@ public class Calculadora {
 	
 	public boolean esImpar(int a) {
 		//TODO desarrollar funcionalidad
-		boolean salida = false;
+		boolean s = false;
+		
 		if(a%2!=0){
-            salida=true;
+            s=true;
        }
-		return salida;
+		return s;
 	}
 
 	public boolean[] getEstadoFuncionalidad() {
