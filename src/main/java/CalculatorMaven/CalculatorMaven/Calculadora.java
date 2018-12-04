@@ -9,7 +9,7 @@ public class Calculadora {
 		estadoFuncionalidad[1] = false;
 		estadoFuncionalidad[2] = false;
 		estadoFuncionalidad[3] = false;
-		estadoFuncionalidad[4] = false;
+		estadoFuncionalidad[4] = true;
 		estadoFuncionalidad[5] = false;
 		estadoFuncionalidad[6] = false;
 		estadoFuncionalidad[7] = false;
@@ -38,8 +38,7 @@ public class Calculadora {
 	}
 	
 	public int modulo(int a, int b) {
-		//TODO desarrollar funcionalidad
-		return 0;
+		return a%b;
 	}
 	
 	public long exponente(int a, int b) {
